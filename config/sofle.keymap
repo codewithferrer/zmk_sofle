@@ -168,8 +168,8 @@
             >;
 
             sensor-bindings = <
-                &mouse_move_v,    // Encoder izquierdo: Movimiento vertical (rotación)
-                &mouse_move_h     // Encoder derecho: Movimiento horizontal (rotación)
+                &mouse_move_v
+                &mouse_move_h
             >;
         };
 
@@ -190,8 +190,8 @@
             >;
 
             sensor-bindings = <
-                &mouse_move_v,    // Encoder izquierdo: Movimiento vertical (rotación)
-                &mouse_move_h     // Encoder derecho: Movimiento horizontal (rotación)
+                &mouse_move_v
+                &mouse_move_h
             >;
         };
 
