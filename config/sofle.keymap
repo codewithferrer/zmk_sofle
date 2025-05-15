@@ -12,7 +12,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT 0
 #define DVORAK  1
@@ -139,6 +138,20 @@
         };
     };
 
+    behaviors {
+        inc_dec_mouse_v: inc_dec_mouse_v {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN>, <&mmv MOVE_UP>;
+        };
+
+        inc_dec_mouse_h: inc_dec_mouse_h {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT>, <&mmv MOVE_RIGHT>;
+        };
+    };
+
    // Activate ADJUST layer by pressing raise and lower
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -168,8 +181,8 @@
             >;
 
             sensor-bindings = <
-                &mouse_move_v
-                &mouse_move_h
+                &inc_dec_mouse_v
+                &inc_dec_mouse_h
             >;
         };
 
@@ -190,8 +203,8 @@
             >;
 
             sensor-bindings = <
-                &mouse_move_v
-                &mouse_move_h
+                &inc_dec_mouse_v
+                &inc_dec_mouse_h
             >;
         };
 
