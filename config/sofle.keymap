@@ -173,8 +173,8 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | none| none | LGUI | LOWER|  SPACE |  | ENTER | RAISE| RALT  | none  | none |
             bindings = <
-&none            &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
-&lt NUMPAD TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
+&none            &kp N1 &kp N2   &mmv MOVE_UP   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
+&lt NUMPAD TAB   &kp Q  &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT     &kp T                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp LCTRL        &kp A  &kp S    &kp D    &kp F     &kp G                            &kp H  &kp J     &kp K     &kp L    &kp SEMI &es_accent_kp
 &kp LSHFT        &kp Z  &kp X    &kp C    &kp V     &kp B    &mkp LCLK   &mkp RCLK   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp ESC
                  &none  &none    &kp LGUI &mo LOWER &kp SPACE                        &kp RET &mo RAISE &kp RALT &none    &none
